@@ -17,7 +17,9 @@
 
 ### Requerimientos
 
+---
+
 #### Imágenes
 
-    - Dimensiones: 1000x750px
+    - Dimensiones: 1099x946px
 
