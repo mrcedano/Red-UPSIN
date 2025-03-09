@@ -30,4 +30,4 @@
 
 ### Iconos
 
-    - [Vecta.io](https://vecta.io/symbols/category/cisco): Iconos de oficiales de Cisco en formato SVG, JPG y PNG. 
+ [Vecta.io](https://vecta.io/symbols/category/cisco): Iconos de oficiales de Cisco en formato SVG, JPG y PNG. 
