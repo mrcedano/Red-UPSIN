@@ -1,7 +1,5 @@
 # Infraestructura de Red UPSIN
 
----
-
 ## Participantes
 
     - Óscar Noel Cedano Beltrán
@@ -10,21 +8,13 @@
     - José Ramón Valdez Zatarain
     - José Ángel Ortega Vizcarra
 
----
-
 ## Descripción
-
-
----
 
 ## Requerimientos
 
 #### Imágenes
 
     - Dimensiones: 1099x946px
-
-
----
 
 ## Recursos
 
