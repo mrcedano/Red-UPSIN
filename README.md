@@ -12,14 +12,22 @@
 
 ---
 
-### Descripción
+## Descripción
 
-
-### Requerimientos
 
 ---
+
+## Requerimientos
 
 #### Imágenes
 
     - Dimensiones: 1099x946px
 
+
+---
+
+## Recursos
+
+### Iconos
+
+    - [Vecta.io](https://vecta.io/symbols/category/cisco): Iconos de oficiales de Cisco en formato SVG, JPG y PNG. 
