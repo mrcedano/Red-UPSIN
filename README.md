@@ -26,11 +26,11 @@
 - Tener imágenes
 - ~~Establecer nomenclaturas de dispositivos~~
 - Establecer nomenclaturas de conecciones
-- Crear plantillas
-  - Plantilla para oficinas
-  - Plantilla para laboratorios sin máquinas
-  - Plantilla para laboratorios con máquinas
-  - Plantilla para baños
+- ~~Crear plantillas~~
+  - ~~Plantilla para oficinas~~
+  - ~~Plantilla para laboratorios sin máquinas~~
+  - ~~Plantilla para laboratorios con máquinas~~
+  - ~~Plantilla para baños~~
 - Tener la red backbone configurada
   - Diseñar red en el Site (edificio de TI)
   - Colocar y conectar dispositivos en cada edificio
