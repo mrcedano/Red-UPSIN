@@ -42,3 +42,4 @@
   - Generar access list de las VLANs de las aulas
   - Hacer subneteo de los routers internos
   - Implementar OSPF
+  - Crear usuarios SMTP & FTP
