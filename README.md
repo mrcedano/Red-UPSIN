@@ -35,6 +35,7 @@
   - Diseñar backbone en el Site (edificio de TI)
   - Colocar y conectar dispositivos en cada edificio
   - ~~En los edificios hay que crear las VLANs~~
+  - ~~Nomenclatura de nombres de dispositivos~~
   - Configurar puertos
   - Crear LACP que vaya de los routers Master al Site
   - Hacer subneteo de los routers en el site
