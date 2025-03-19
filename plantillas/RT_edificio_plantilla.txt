@@ -61,7 +61,7 @@ interface GigabitEthernet0/0.30
  ip address <<IP_VLAN30>> 255.255.255.252
 !
 interface GigabitEthernet0/1
- ip address <<IP_CABLE> 255.255.255.252
+ ip address <<IP_CABLE>> 255.255.255.252
  duplex auto
  speed auto
 !
@@ -76,13 +76,15 @@ interface Vlan1
 !
 router ospf 1
  log-adjacency-changes
+ redistribute static 
  network <<IP_VLAN10>> 0.0.1.255 area 1
  network <<IP_VLAN11>> 0.0.0.255 area 1
  network <<IP_VLAN20>> 0.0.0.63 area 1
  network <<IP_CABLE>> 0.0.0.3 area 0
- network <<IP_CABLE> 0.0.0.3 area 0
+ network <<IP_CABLE>> 0.0.0.3 area 0
 !
 ip classless
+ip route 0.0.0.0 0.0.0.0 <<IP_INTERFAZ_CERCANA_ISP>>
 !
 ip flow-export version 9
 !
