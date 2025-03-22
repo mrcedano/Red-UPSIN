@@ -1,0 +1,236 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname RT1TEL
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017LA1V-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address <<IP_VLAN_2>> 255.255.255.192
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+dial-peer voice <SESION_DIAL> voip
+ destination-pattern <PATRON>.
+ session target ipv4:<DESTINO_RT_TEL>
+!
+dial-peer voice <SESION_DIAL> voip
+ destination-pattern <PATRON>.
+ session target ipv4:<DESTINO_RT_TEL>
+!
+dial-peer voice <SESION_DIAL> voip
+ destination-pattern <PATRON>.
+ session target ipv4:<DESTINO_RT_TEL>
+!
+dial-peer voice <SESION_DIAL> voip
+ destination-pattern <PATRON>.
+ session target ipv4:<DESTINO_RT_TEL>
+!
+dial-peer voice <SESION_DIAL> voip
+ destination-pattern <PATRON>.
+ session target ipv4:<DESTINO_RT_TEL>
+!
+dial-peer voice <SESION_DIAL> voip
+ destination-pattern <PATRON>.
+ session target ipv4:<DESTINO_RT_TEL>
+!
+telephony-service
+ max-ephones 42
+ max-dn 59
+ ip source-address <<IP_VLAN20_2>> port 2000
+ auto assign 1 to 42
+!
+ephone-dn 1
+ number <<EXT>>1
+!
+ephone-dn 2
+ number <<EXT>>2
+!
+ephone-dn 3
+ number <<EXT>>3
+!
+ephone-dn 4
+ number <<EXT>>4
+!
+ephone-dn 5
+ number <<EXT>>5
+!
+ephone-dn 6
+ number <<EXT>>6
+!
+ephone-dn 7
+ number <<EXT>>7
+!
+ephone-dn 8
+ number <<EXT>>8
+!
+ephone-dn 9
+ number <<EXT>>9
+!
+ephone-dn 10
+ number <<EXT>>10
+!
+ephone-dn 11
+ number <<EXT>>11
+!
+ephone-dn 12
+ number <<EXT>>12
+!
+ephone-dn 13
+ number <<EXT>>13
+!
+ephone-dn 14
+ number <<EXT>>14
+!
+ephone-dn 15
+ number <<EXT>>15
+!
+ephone-dn 16
+ number <<EXT>>16
+!
+ephone-dn 17
+ number <<EXT>>17
+!
+ephone-dn 18
+ number <<EXT>>18
+!
+ephone-dn 19
+ number <<EXT>>19
+!
+ephone-dn 20
+ number <<EXT>>20
+!
+ephone-dn 21
+ number <<EXT>>21
+!
+ephone-dn 22
+ number <<EXT>>22
+!
+ephone-dn 23
+ number <<EXT>>23
+!
+ephone-dn 24
+ number <<EXT>>24
+!
+ephone-dn 25
+ number <<EXT>>25
+!
+ephone-dn 26
+ number <<EXT>>26
+!
+ephone-dn 27
+ number <<EXT>>27
+!
+ephone-dn 28
+ number <<EXT>>28
+!
+ephone-dn 29
+ number <<EXT>>29
+!
+ephone-dn 30
+ number <<EXT>>30
+!
+ephone-dn 31
+ number <<EXT>>31
+!
+ephone-dn 32
+ number <<EXT>>32
+!
+ephone-dn 33
+ number <<EXT>>33
+!
+ephone-dn 34
+ number <<EXT>>34
+!
+ephone-dn 35
+ number <<EXT>>35
+!
+ephone-dn 36
+ number <<EXT>>36
+!
+ephone-dn 37
+ number <<EXT>>37
+!
+ephone-dn 38
+ number <<EXT>>38
+!
+ephone-dn 39
+ number <<EXT>>39
+!
+ephone-dn 40
+ number <<EXT>>40
+!
+ephone-dn 41
+ number <<EXT>>41
+!
+ephone-dn 42
+ number <<EXT>>42
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
