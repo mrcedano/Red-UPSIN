@@ -1,0 +1,107 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2911/K9 sn FTX1524C31B-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address <<IP_VLAN10>> 255.255.254.0
+ ip helper-address 172.16.0.3
+!
+interface GigabitEthernet0/0.11
+ encapsulation dot1Q 11
+ ip address <<IP_VLAN11>> 255.255.255.0
+ ip helper-address 172.16.0.3
+!
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address <<IP_VLAN20>> 255.255.255.192
+ ip helper-address 172.16.0.3
+!
+interface GigabitEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address <<IP_VLAN30>> 255.255.255.252
+!
+interface GigabitEthernet0/1
+ ip address <<IP_CABLE>> 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+ ip address <<IP_CABLE>> 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ redistribute static 
+ network <<IP_VLAN10>> 0.0.1.255 area 1
+ network <<IP_VLAN11>> 0.0.0.255 area 1
+ network <<IP_VLAN20>> 0.0.0.63 area 1
+ network <<IP_CABLE>> 0.0.0.3 area 0
+ network <<IP_CABLE>> 0.0.0.3 area 0
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 <<IP_INTERFAZ_CERCANA_ISP>>
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
