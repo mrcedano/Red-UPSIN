@@ -1,0 +1,240 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname RT1TEL
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017LA1V-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 192.170.1.130 255.255.255.192
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ network 192.170.1.128 0.0.0.63 area 1
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+dial-peer voice 1 voip
+ destination-pattern 100.
+ session target ipv4:192.170.0.2
+!
+dial-peer voice 2 voip
+ destination-pattern 400.
+ session target ipv4:192.170.0.194
+!
+dial-peer voice 3 voip
+ destination-pattern 700.
+ session target ipv4:192.170.1.66
+!
+dial-peer voice 4 voip
+ destination-pattern 200.
+ session target ipv4:192.170.0.66
+!
+dial-peer voice 5 voip
+ destination-pattern 500.
+ session target ipv4:192.170.1.2
+!
+dial-peer voice 6 voip
+ destination-pattern 300.
+ session target ipv4:192.170.0.130
+!
+telephony-service
+ max-ephones 42
+ max-dn 59
+ ip source-address 192.170.1.130 port 2000
+ auto assign 1 to 42
+!
+ephone-dn 1
+ number 6001
+!
+ephone-dn 2
+ number 6002
+!
+ephone-dn 3
+ number 6003
+!
+ephone-dn 4
+ number 6004
+!
+ephone-dn 5
+ number 6005
+!
+ephone-dn 6
+ number 6006
+!
+ephone-dn 7
+ number 6007
+!
+ephone-dn 8
+ number 6008
+!
+ephone-dn 9
+ number 6009
+!
+ephone-dn 10
+ number 60010
+!
+ephone-dn 11
+ number 60011
+!
+ephone-dn 12
+ number 60012
+!
+ephone-dn 13
+ number 60013
+!
+ephone-dn 14
+ number 60014
+!
+ephone-dn 15
+ number 60015
+!
+ephone-dn 16
+ number 60016
+!
+ephone-dn 17
+ number 60017
+!
+ephone-dn 18
+ number 60018
+!
+ephone-dn 19
+ number 60019
+!
+ephone-dn 20
+ number 60020
+!
+ephone-dn 21
+ number 60021
+!
+ephone-dn 22
+ number 60022
+!
+ephone-dn 23
+ number 60023
+!
+ephone-dn 24
+ number 60024
+!
+ephone-dn 25
+ number 60025
+!
+ephone-dn 26
+ number 60026
+!
+ephone-dn 27
+ number 60027
+!
+ephone-dn 28
+ number 60028
+!
+ephone-dn 29
+ number 60029
+!
+ephone-dn 30
+ number 60030
+!
+ephone-dn 31
+ number 60031
+!
+ephone-dn 32
+ number 60032
+!
+ephone-dn 33
+ number 60033
+!
+ephone-dn 34
+ number 60034
+!
+ephone-dn 35
+ number 60035
+!
+ephone-dn 36
+ number 60036
+!
+ephone-dn 37
+ number 60037
+!
+ephone-dn 38
+ number 60038
+!
+ephone-dn 39
+ number 60039
+!
+ephone-dn 40
+ number 60040
+!
+ephone-dn 41
+ number 60041
+!
+ephone-dn 42
+ number 60042
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
