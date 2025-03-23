@@ -79,7 +79,7 @@ router ospf 1
  redistribute static 
  network 192.168.10.0 0.0.1.255 area 1
  network 192.169.5.0 0.0.0.255 area 1
- network 192.190.0.20 0.0.0.63 area 1
+ network 192.170.1.64 0.0.0.63 area 1
  network 172.16.0.20 0.0.0.3 area 0
  network 172.16.0.24 0.0.0.3 area 0
 !
