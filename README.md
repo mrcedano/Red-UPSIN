@@ -5,7 +5,6 @@
 - Óscar Noel Cedano Beltrán
 - Ángel Gabriel Barrón Morales
 - Jared Francisco Terán García
-- José Ramón Valdez Zatarain
 - José Ángel Ortega Vizcarra
 
 ## Descripción
