@@ -5,6 +5,7 @@
 - Óscar Noel Cedano Beltrán
 - Ángel Gabriel Barrón Morales
 - Jared Francisco Terán García
+- José Ramón Valdez Zatarain
 - José Ángel Ortega Vizcarra
 
 ## Descripción
@@ -25,7 +26,7 @@ Lo siguiente es lo que hace falta en Packet Tracer.
 |Tarea                              |Descripción                                                                         |Amenaza|Tiempo  |Completado|
 |-----------------------------------|------------------------------------------------------------------------------------|-------|--------|----------|
 |~~Implementar ISP~~                |~~Configurar el ISP de prueba con un DNS.~~                                         |~~1~~  |~~10m~~ |Sí        |
-|PAT del ISP                        |Configurar el PAT de salida de la red.                                              |1      |10 m    |No        |
+|~~NAT/PAT~~                        |~~Configurar el PAT de salida de la red.~~                                          |~~1~~  |~~10 m~~|~~No~~    |
 |~~Rutas y servicios~~              |~~Dar de alta los servicios de red y la ruta alterna hacia ellos dentro de la red.~~|~~1~~  |~~30 m~~|Sí        |
 |~~SIIAA y página web~~             |~~Crear ambos con HTML.~~                                                           |~~1~~  |~~1 h~~ |Sí        |
 |Access lists                       |Configurar las listas de acceso para los routers.                                   |1      |1 h     |No        |
