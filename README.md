@@ -33,9 +33,9 @@ Lo siguiente es lo que hace falta en Packet Tracer.
 |~~Telefonía~~                      |~~Configurar los routers de telefonía.~~                                            |~~1~~  |~~2 h~~ |Sí        |
 |~~Access Point Managers~~          |~~Configurar los access point managers.~~                                           |~~2~~  |~~3 h~~ |~~No~~    |
 |Implementación de espacios abiertos|Implementar los espacios abiertos que no se pueden hacer con las plantillas.        |4      |2 h     |No        |
-|Implementación de plantillas       |Insertar las plantillas en los lugares necesarios.                                  |4      |1 d     |No        |
+|~~Implementación de plantillas~~       |~~Insertar las plantillas en los lugares necesarios.~~                                  |~~4~~      |~~1 d~~     |~~Sí~~        |
 |Pruebas                            |Realizar distintos escenarios demostrando la funcionalidad total de la red.         |4      |3 h     |No        |
 |Programación de IoT                |Programar los dispositivos IoT                                                      |4      |5 h     |No        |
 |Documentación                      |Documentar cada computadora y cable (nombrarlos con sus adecuadas nomenclaturas)    |5      |1 d     |No        |
-|Nuevas plantillas                  |Elaborar plantillas para laboratorios y aulas con oficinas                          |5      |2 h     |No        |
-|Imágenes                           |Terminar e insertar las imágenes de todas las plantas de todos los edificios.       |5      |4 h     |No        |
+|~~Nuevas plantillas~~                  |~~Elaborar plantillas para laboratorios y aulas con oficinas~~                          |~~5~~      |~~2 h~~     |~~No~~        |
+|~~Imágenes~~                           |~~Terminar e insertar las imágenes de todas las plantas de todos los edificios.~~       |~~5~~      |~~4 h~~     |~~No~~        |
